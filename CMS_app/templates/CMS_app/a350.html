@@ -1,0 +1,38 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hackathon</title>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   </head>
+   <style type="text/css">
+      #nav{
+      height: 100vh;
+      }
+   </style>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-2 bg-light" id="nav">
+               <button type="button" class="btn btn-primary" style="margin: 10px;" id="Home"><a href="index.html">Home</a></button>
+               <br>
+               <button type="button" class="btn btn-success" style="margin: 10px;" id="A320b">.<a href="a320.html">A320</a> </button>
+               <br>
+               <button type="button" class="btn btn-warning" style="margin: 10px;" id="A330b">.<a href="a330.html">A330</a> 
+               </button>
+               <br>
+               <button type="button" class="btn btn-info" style="margin: 10px;" id="A350b">.<a href="a350.html"> A350</a></button>
+               <br>
+               <button type="button" class="btn btn-danger" style="margin: 10px;" id="Search">Search & Filter</button>
+               <br>
+            </div>
+            <div class="col-10" id="content">
+                   <div class="container-fluid" id="a350"> <button type="button" class="btn btn-primary btn-lg btn-block">A350 Program</button> <br><br><form> <div class="form-group"> <label foar="MSN">MSN</label> <input type="number" class="form-control" id="MSN" aria-describedby="msnHelp" placeholder="Enter MSN Number" required> </div><div class="form-group"> <label for="Harness">Harness Length</label> <input type="number" class="form-control" id="Harness" aria-describedby="HarnessHelp" placeholder="Enter Harness Length" required> </div><div class="form-group"> <label for="Gross">Gross Weight</label> <input type="number" class="form-control" id="Gross" aria-describedby="GrossHelp" placeholder="Enter Gross Weight" required> </div><div class="form-group"> <label for="Atmospheric">Atmospheric Pressure</label> <input type="number" class="form-control" id="Atmospheric" aria-describedby="AtmosphericHelp" placeholder="Enter Atmospheric Pressure" required> </div><div class="form-group"> <label for="Airport">Airport</label> <input type="text" class="form-control" id="Airport" aria-describedby="AirportHelp" placeholder="Enter Airport" required> </div><div class="form-group"> <label for="fclw">Fuel Capacity On Left Wing</label> <input type="number" class="form-control" id="fclw" aria-describedby="fclwHelp" placeholder="Enter Fuel Capacity On Left Wing" required> </div><div class="form-group"> <label for="fcrw">Fuel Capacity On Right Wing</label> <input type="number" class="form-control" id="fcrw" aria-describedby="fcrwHelp" placeholder="Enter Fuel Capacity On Right Wing" required> </div><div class="form-group"> <label for="fqlw">Fuel Quantity On Left Wing</label> <input type="number" class="form-control" id="fqlw" aria-describedby="fqlwHelp" placeholder="Enter Fuel Quantity On Left Wing" required> </div><div class="form-group"> <label for="fqrw">Fuel Quantity On Right Wing</label> <input type="number" class="form-control" id="fqrw" aria-describedby="fqrwHelp" placeholder="Enter Fuel Quantity On Right Wing" required> </div><div class="form-group"> <label for="maxalt">Maximum Altitude to be Reached</label> <input type="number" class="form-control" id="maxalt" aria-describedby="maxaltHelp" placeholder="Enter Maximum Altitude to be Reached" required> </div><div class="form-group"> <label for="Fn">Flight Number</label> <input type="text" class="form-control" id="Fn" aria-describedby="FnHelp" placeholder="Enter Flight Number" required> </div><button type="submit" class="btn btn-primary">Submit</button> </form> </div>
+         </div>
+      </div>
+   </body>
+</html>

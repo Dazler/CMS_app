@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
    <head>
@@ -7,8 +8,6 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-      <script src="jquery-3.3.1.min.js"></script>
-      <script src="script.js"></script>
    </head>
    <style type="text/css">
       #nav{
@@ -19,13 +18,14 @@
       <div class="container-fluid">
          <div class="row">
             <div class="col-2 bg-light" id="nav">
-               <button type="button" class="btn btn-primary" style="margin: 10px;" id="Home">Home</button>
+               <button type="button" class="btn btn-primary" style="margin: 10px;" id="Home"><a href="index.html">Home</a></button>
                <br>
-               <button type="button" class="btn btn-success" style="margin: 10px;" id="A320b">A320</button>
+               <button type="button" class="btn btn-success" style="margin: 10px;" id="A320b">.<a href="a320.html">A320</a> </button>
                <br>
-               <button type="button" class="btn btn-warning" style="margin: 10px;" id="A330b">A330</button>
+               <button type="button" class="btn btn-warning" style="margin: 10px;" id="A330b">.<a href="a330.html">A330</a> 
+               </button>
                <br>
-               <button type="button" class="btn btn-info" style="margin: 10px;" id="A350b">A350</button>
+               <button type="button" class="btn btn-info" style="margin: 10px;" id="A350b">.<a href="a350.html"> A350</a></button>
                <br>
                <button type="button" class="btn btn-danger" style="margin: 10px;" id="Search">Search & Filter</button>
                <br>

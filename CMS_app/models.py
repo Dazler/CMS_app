@@ -16,3 +16,9 @@ class Aircraft(models.Model):
     Fuel_Quantity_on_Right_Wing = models.IntegerField(default=0)
     Maximum_Altitude_to_be_Reached = models.IntegerField(default=0)
     Flight_No = models.TextField(default="CR7")
+    Flight_type = models.TextField(default="Based_on_button")
+
+class NewsFeed(models.Model):
+	HeadLine = models.TextField(default="Heaven")
+	Content = models.TextField(default="Heaven")
+    
